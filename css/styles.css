@@ -264,7 +264,6 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
   transition-delay: 0s;
-
 }
 
 .hero-button:hover,
@@ -368,13 +367,13 @@ address {
   justify-content: center;
   font-family: inherit;
   font-weight: 700;
-font-size: 14px;
-line-height: calc(16 / 14);
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--hero-txt-cl);
-background-color: var(--prrofession-bg-cl);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-txt-cl);
+  background-color: var(--prrofession-bg-cl);
 }
 
 /* team section */
@@ -458,7 +457,7 @@ background-color: var(--prrofession-bg-cl);
   border-radius: 4px;
   box-sizing: border-box;
   color: var(--social-link-cl);
-   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
+  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
   Если не задать значения свойств перехода, то применится all
   */
   transition-property: color, border-color;
@@ -524,7 +523,7 @@ background-color: var(--prrofession-bg-cl);
 
 .addres-link {
   color: var(--hero-txt-cl);
-   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
+  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
   Если не задать значения свойств перехода, то применится all
   */
   transition-property: color;
@@ -539,7 +538,7 @@ background-color: var(--prrofession-bg-cl);
 .mail-footer,
 .phone-number-footer {
   color: rgba(255, 255, 255, 0.6);
-   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
+  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
   Если не задать значения свойств перехода, то применится all
   */
   transition-property: color;
@@ -589,10 +588,10 @@ background-color: var(--prrofession-bg-cl);
   border-radius: 50%;
   color: var(--social-link-accent-cl);
   background-color: var(--footer-socil-link-accent-cl);
-   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
+  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
   Если не задать значения свойств перехода, то применится all
   */
-  transition-property:background-color;
+  transition-property: background-color;
   /* отвечает за время перехода одного состояния в другое */
   transition-duration: 250ms;
   /* функция распределения времени перехода */
@@ -663,37 +662,37 @@ PORTFOLIO SECTION
 }
 
 .overlay {
-background-color: var(--overlay-bg-cl);
-position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-top: 0;
-left: 0;
-transform: translateY(100%);
-width: 100%;
-height: 100%;
-transition: transform 250ms ease-in-out ;
+  background-color: var(--overlay-bg-cl);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms ease-in-out;
 }
 
 .overlay-text {
   color: var(--hero-txt-cl);
   font-family: inherit;
   font-weight: 400;
-font-size: 18px;
-line-height: calc(28 / 18);
-letter-spacing: 0.03em;
-text-align: center;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
-position: relative;
-overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-item:hover .overlay {
-transform: translateY(0);
+  transform: translateY(0);
 }
 .portfolio-link {
   display: block;
@@ -781,7 +780,7 @@ fill: var(--social-link-accent-cl);
 
 .social-icon {
   fill: currentColor;
-   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
+  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
   Если не задать значения свойств перехода, то применится all
   */
   transition-property: color, background-color;
@@ -790,7 +789,7 @@ fill: var(--social-link-accent-cl);
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;  
+  transition-delay: 0s;
 }
 
 /* Modal window */
@@ -812,7 +811,7 @@ fill: var(--social-link-accent-cl);
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0.3s;  
+  transition-delay: 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -821,23 +820,22 @@ fill: var(--social-link-accent-cl);
   pointer-events: none;
 }
 
-
 .modal {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   width: 528px;
   height: 581px;
   background-color: var(--hero-txt-cl);
   border-radius: 4px;
-  transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms ;
+  transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
   opacity: 1;
 }
 
 .backdrop.is-hidden .modal {
   opacity: 0;
-transform: translate(-50%, -50%) scale(0.4) rotate(1turn);
+  transform: translate(-50%, -50%) scale(0.4) rotate(1turn);
 }
 
 .modal-btn {
