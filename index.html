@@ -16,7 +16,7 @@
   <title>Web Studio</title>
 </head>
 
-<body>
+<body data-page>
   <!--шапка сайта-->
 
   <header class="header">
@@ -71,7 +71,7 @@
           Эффективные решения для вашего бизнеса
         </h1>
 
-        <button type="button" lang="ru" class="hero-button">
+        <button type="button" lang="ru" class="hero-button" data-modal-open>
           Заказать услугу
         </button>
       </div>
@@ -146,12 +146,21 @@
         <ul class="profession-list list">
           <li class="profession-item">
             <img src="./images/img-1.jpg" width="370" alt="some code" />
+            <p class="profession-discription">
+Десктопные приложения
+            </p>
           </li>
           <li class="profession-item">
             <img src="./images/img-2.jpg" width="370" alt="mobile layout" />
+            <p class="profession-discription">
+Мобильные приложения
+            </p>
           </li>
           <li class="profession-item">
             <img src="./images/img-3.jpg" width="370" alt="RGB Cube" />
+            <p class="profession-discription">
+Дизайнерские решения
+            </p>
           </li>
         </ul>
       </div>
@@ -367,7 +376,7 @@
         </ul>
       </div>
     </section>
-
+</main>
     <!--Подвал сайта-->
 
     <footer class="footer">
@@ -434,7 +443,17 @@
         </div>
       </div>
     </footer>
-  </main>
+    <!-- Modal Window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="18" height="18">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <script src="./js/modal.js/modal-script"></script>
 </body>
 
 </html>
