@@ -661,12 +661,15 @@ PORTFOLIO SECTION
   padding: 0;
 }
 
+.portfolio-photo {
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay {
   background-color: var(--overlay-bg-cl);
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ padding: 63px 24px;
   top: 0;
   left: 0;
   transform: translateY(100%);
@@ -676,6 +679,7 @@ PORTFOLIO SECTION
 }
 
 .overlay-text {
+  max-width: 322px;
   color: var(--hero-txt-cl);
   font-family: inherit;
   font-weight: 400;
@@ -687,13 +691,14 @@ PORTFOLIO SECTION
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
-  position: relative;
-  overflow: hidden;
+  
 }
 
+/*
 .portfolio-item:hover .overlay {
   transform: translateY(0);
 }
+*/
 .portfolio-link {
   display: block;
   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
@@ -707,10 +712,16 @@ PORTFOLIO SECTION
   /* указывает время задержки перед началом перехода */
   transition-delay: 0s;
 }
+
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link:hover .overlay,
+.portfolio-link:focus  .overlay {
+    transform: translateY(0);
 }
 
 .portfolio-name {
