@@ -634,7 +634,6 @@ PORTFOLIO SECTION
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;
 }
 
 .btn:hover,
@@ -699,7 +698,6 @@ PORTFOLIO SECTION
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;
 }
 
 .portfolio-link:hover,
@@ -788,7 +786,7 @@ fill: var(--social-link-accent-cl);
 
 .social-icon {
   fill: currentColor;
-  
+
 }
 
 /* Modal window */
