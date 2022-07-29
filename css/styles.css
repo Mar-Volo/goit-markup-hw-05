@@ -147,13 +147,12 @@ address {
   /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
   Если не задать значения свойств перехода, то применится all
   */
-  transition-property: color, fill;
+  transition-property: color;
   /* отвечает за время перехода одного состояния в другое */
   transition-duration: 250ms;
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;
 }
 
 .header-nav-item {
@@ -168,7 +167,6 @@ address {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-txt-cl);
-  fill: var(--accent-txt-cl);
 }
 .header-link-current {
   color: var(--accent-txt-cl);
@@ -263,7 +261,6 @@ address {
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;
 }
 
 .hero-button:hover,
@@ -359,18 +356,14 @@ address {
 
 .profession-discription {
   position: absolute;
-  top: 224px;
   bottom: 0;
   width: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: inherit;
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-txt-cl);
   background-color: var(--prrofession-bg-cl);
@@ -466,7 +459,6 @@ address {
   /* функция распределения времени перехода */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;
 }
 
 .clients-icon {
@@ -669,7 +661,7 @@ PORTFOLIO SECTION
 .overlay {
   background-color: var(--overlay-bg-cl);
   position: absolute;
- padding: 63px 24px;
+  padding: 63px 24px;
   top: 0;
   left: 0;
   transform: translateY(100%);
@@ -679,19 +671,16 @@ PORTFOLIO SECTION
 }
 
 .overlay-text {
-  max-width: 322px;
   color: var(--hero-txt-cl);
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
-  
 }
 
 /*
@@ -715,13 +704,13 @@ PORTFOLIO SECTION
 
 .portfolio-link:hover,
 .portfolio-link:focus {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-link:hover .overlay,
-.portfolio-link:focus  .overlay {
-    transform: translateY(0);
+.portfolio-link:focus .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-name {
@@ -768,6 +757,14 @@ SOCIALS BLOCK
   height: 44px;
   border-radius: 50%;
   color: var(--social-link-cl);
+  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
+  Если не задать значения свойств перехода, то применится all
+  */
+  transition-property: color, background-color;
+  /* отвечает за время перехода из одного состояния в другое */
+  transition-duration: 250ms;
+  /* функция распределения времени перехода */
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* один из способов стилизации иконки для ховера
@@ -791,16 +788,7 @@ fill: var(--social-link-accent-cl);
 
 .social-icon {
   fill: currentColor;
-  /* отвечает за значения свойства, для которого будет осуществлено плавный переход  по заданному времени.
-  Если не задать значения свойств перехода, то применится all
-  */
-  transition-property: color, background-color;
-  /* отвечает за время перехода одного состояния в другое */
-  transition-duration: 250ms;
-  /* функция распределения времени перехода */
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* указывает время задержки перед началом перехода */
-  transition-delay: 0s;
+  
 }
 
 /* Modal window */
